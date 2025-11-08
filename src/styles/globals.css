@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --prussian-blue: #003049;
+    --fire-engine-red: #d62828;
+    --orange-wheel: #f77f00;
+    --xanthous: #fcbf49;
+    --vanilla: #eae2b7;
+    
+    --background: 0 0% 100%;
+    --foreground: 201 100% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 201 100% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 201 100% 14%;
+    --primary: 201 100% 14%;
+    --primary-foreground: 51 55% 82%;
+    --secondary: 31 100% 48%;
+    --secondary-foreground: 51 55% 82%;
+    --muted: 51 55% 82%;
+    --muted-foreground: 201 100% 14%;
+    --accent: 0 69% 50%;
+    --accent-foreground: 51 55% 82%;
+    --destructive: 0 69% 50%;
+    --destructive-foreground: 51 55% 82%;
+    --border: 40 97% 64%;
+    --input: 40 97% 64%;
+    --ring: 31 100% 48%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  button {
+    font-weight: 600;
+  }
+}
